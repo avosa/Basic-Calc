@@ -7,28 +7,29 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  background: linear-gradient(to right, blue, green);
 }
 
-.calculator-grid {
+.ogla-grid {
   display: grid;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 100%;
+  padding-top: 45px;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculator-grid > button {
+.ogla-grid > button {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 32px;
   border: 1px solid white;
   outline: none;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: khaki;
 }
 
-.calculator-grid > button:hover {
-  background-color: rgba(255, 255, 255, .9);
+.ogla-grid > button:hover {
+  background-color: pink);
 }
 
 .span-two {
@@ -37,7 +38,7 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: cyan;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -48,11 +49,11 @@ body {
 }
 
 .output .previous-operand {
-  color: rgba(255, 255, 255, .75);
-  font-size: 1.5rem;
+  color: indigo;
+  font-size: 24px;
 }
 
 .output .current-operand {
-  color: white;
-  font-size: 2.5rem;
+  color: purple;
+  font-size: 40px;
 }
